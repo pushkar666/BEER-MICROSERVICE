@@ -5,10 +5,12 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 
 import com.microservices.api_service.entity.Beer;
 import com.microservices.api_service.repository.BeerRepository;
 
+@Service
 public class BeerService {
     @Autowired
     private BeerRepository beerRepository;

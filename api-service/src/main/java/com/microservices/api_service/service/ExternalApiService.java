@@ -2,10 +2,12 @@ package com.microservices.api_service.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import com.microservices.api_service.entity.Beer;
 
+@Service
 public class ExternalApiService {
 
     private static final String API_URL = "https://api.sampleapis.com/beers/ale";
